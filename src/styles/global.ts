@@ -11,9 +11,13 @@ export const GlobalStyle = createGlobalStyle`
         outline: 0;
     }
 
+    ol, ul {
+    list-style: none;
+    }
+
     body {
-        background-color: ${(props) => props.theme['gray-900']};
-        color: ${(props) => props.theme['gray-300']};
+        background-color: ${(props) => props.theme['base-background']};
+        color: ${(props) => props.theme['white']};
         -webkit-font-smoothing: antialiased;
     }
 
@@ -21,6 +25,12 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
         font-size: 1rem;
+    }
+
+    figure {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline: 0;
     }
 
 

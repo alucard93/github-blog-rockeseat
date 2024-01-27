@@ -1,7 +1,12 @@
-import React from 'react'
+import { Profile } from '../component/Profile/Profile'
+import { HomeContainer } from './style'
 
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <HomeContainer>
+      <Profile />
+    </HomeContainer>
+  )
 }
 
 export default Home
