@@ -1,5 +1,6 @@
 import {
   AvatarContainer,
+  AvatarContainerIcons,
   AvatarContainerNameAndLink,
   AvatarContent,
   ProfileContainer,
@@ -8,6 +9,11 @@ import {
 import userProfile from './../../assets/avatar.png'
 import { ArrowTop } from '../SvgCustom/ArrowTop'
 import { Link } from 'react-router-dom'
+
+import github from '../../assets/github.svg'
+import building from '../../assets/building.svg'
+import user from '../../assets/user.svg'
+
 export const Profile = () => {
   return (
     <ProfileContainer>
@@ -36,11 +42,21 @@ export const Profile = () => {
             viverra massa quam dignissim aenean malesuada suscipit. Nunc,
             volutpat pulvinar vel mass.
           </p>
-          <div>
-            <p>cameronwll</p>
-            <p>Rocketseat</p>
-            <p>seguidores</p>
-          </div>
+          <AvatarContainerIcons>
+            <div className="container-avatar-img-icon">
+              <img className="avatar-img-icon" src={github} alt="" />
+              <p>cameronwll</p>
+            </div>
+            <div className="container-avatar-img-icon">
+              <img className="avatar-img-icon" src={building} alt="" />
+              <p>Rocketseat</p>
+            </div>
+
+            <div className="container-avatar-img-icon">
+              <img className="avatar-img-icon" src={user} alt="" />
+              <p className='avatar-text-user'>seguidores</p>
+            </div>
+          </AvatarContainerIcons>
         </AvatarContent>
       </ProfileContent>
     </ProfileContainer>

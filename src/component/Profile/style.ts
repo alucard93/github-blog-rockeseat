@@ -4,6 +4,7 @@ export const ProfileContainer = styled.section`
   display: flex;
   width: 100%;
   max-width: 864px;
+
   height: 212px;
 
   border-radius: 10px;
@@ -15,11 +16,13 @@ export const ProfileContainer = styled.section`
 
 export const ProfileContent = styled.div`
   display: flex;
+
   gap: 32px;
 `
 
 export const AvatarContainer = styled.figure`
   display: flex;
+
   width: 100%;
   max-width: 148px;
 
@@ -31,6 +34,9 @@ export const AvatarContainer = styled.figure`
 `
 
 export const AvatarContent = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .avatar-description {
     color: ${({ theme }) => theme['base-text']};
 
@@ -46,6 +52,7 @@ export const AvatarContainerNameAndLink = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 8px;
 
   h1 {
     color: ${({ theme }) => theme['base-title']};
@@ -87,5 +94,31 @@ export const AvatarContainerNameAndLink = styled.div`
     display: flex;
     width: 100%;
     gap: 7px;
+  }
+`
+
+export const AvatarContainerIcons = styled.div`
+  display: flex;
+  gap: 24px;
+
+  .container-avatar-img-icon {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .avatar-img-icon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .avatar-text-user {
+    color: ${({ theme }) => theme['base-subtitle']};
+
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
   }
 `
