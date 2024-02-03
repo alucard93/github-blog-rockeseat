@@ -11,7 +11,7 @@ export const CardContainer = styled.section`
 
   article {
     border-radius: 10px;
-    background: var(--Base-Post, #112131);
+    background: ${({ theme }) => theme['base-post']};
     padding: 32px;
   }
 
