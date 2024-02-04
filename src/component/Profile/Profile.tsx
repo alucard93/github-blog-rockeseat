@@ -6,13 +6,13 @@ import {
   ProfileContainer,
   ProfileContent,
 } from './style'
-import userProfile from './../../assets/avatar.png'
+import userProfile from './../../assets/home/avatar.png'
 import { ArrowTop } from '../SvgCustom/ArrowTop'
 import { Link } from 'react-router-dom'
 
-import github from '../../assets/github.svg'
-import building from '../../assets/building.svg'
-import user from '../../assets/user.svg'
+import github from '../../assets/home/github.svg'
+import building from '../../assets/home/building.svg'
+import user from '../../assets/home/user.svg'
 
 export const Profile = () => {
   return (
@@ -54,7 +54,7 @@ export const Profile = () => {
 
             <div className="container-avatar-img-icon">
               <img className="avatar-img-icon" src={user} alt="" />
-              <p className='avatar-text-user'>seguidores</p>
+              <p className="avatar-text-user">seguidores</p>
             </div>
           </AvatarContainerIcons>
         </AvatarContent>

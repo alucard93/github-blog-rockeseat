@@ -1,6 +1,6 @@
-import coverSmall from './../../assets/CoverSmall.png'
-import coverMedium from './../../assets/Cover-1280.png'
-import coverLarge from './../../assets/cover.png'
+import coverSmall from './../../assets/home/CoverSmall.png'
+import coverMedium from './../../assets/home/Cover-1280.png'
+import coverLarge from './../../assets/home/cover.png'
 import { HeaderContainer } from './style'
 
 export const Header = () => {
